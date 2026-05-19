@@ -1,0 +1,12 @@
+# AgentData Boundary MCP
+
+Paid remote MCP for agent data-access boundary reviews, permission scope evidence, sensitive data notes, and governance receipts.
+
+Website: https://agentdataboundary.clauxel.com/
+MCP endpoint: https://agentdataboundary.clauxel.com/mcp
+Server card: https://agentdataboundary.clauxel.com/server-card.json
+Docs: https://github.com/clauxel/agent-data-boundary-mcp
+
+Use case: Permission boundary receipts for ChatGPT agents.
+Authentication: Bearer token required for production use.
+Tools: map_permissions, flag_sensitive_fields, summarize_boundary, export_remediation_plan
