@@ -1,0 +1,31 @@
+{
+  "name": "AgentData Boundary",
+  "domain": "agentdataboundary.clauxel.com",
+  "type": "MCP",
+  "description": "Audit connected-app data boundaries before a ChatGPT agent touches sensitive fields.",
+  "endpoint": "https://agentdataboundary.clauxel.com/mcp",
+  "authentication": "Bearer token required for production use",
+  "tools": [
+    "map_permissions",
+    "flag_sensitive_fields",
+    "summarize_boundary",
+    "export_remediation_plan"
+  ],
+  "pricing": [
+    {
+      "name": "Starter",
+      "monthlyUsd": 49,
+      "limit": "25 app maps"
+    },
+    {
+      "name": "Team",
+      "monthlyUsd": 149,
+      "limit": "250 maps and audit exports"
+    },
+    {
+      "name": "Company",
+      "monthlyUsd": 399,
+      "limit": "2500 maps and API"
+    }
+  ]
+}
