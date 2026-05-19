@@ -1,11 +1,13 @@
 {
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.clauxel.agentdataboundary/agentdataboundary-mcp",
-  "title": "AgentData Boundary MCP",
-  "description": "Paid remote MCP for agent data-access boundary reviews, permission scope evidence, sensitive data notes, and governance receipts.",
+  "description": "Permission boundary receipts for ChatGPT agents.",
   "version": "1.0.0",
-  "websiteUrl": "https://agentdataboundary.clauxel.com/",
-  "documentationUrl": "https://github.com/clauxel/agent-data-boundary-mcp",
-  "serverCardUrl": "https://agentdataboundary.clauxel.com/server-card.json",
+  "website_url": "https://agentdataboundary.clauxel.com/",
+  "repository": {
+    "url": "https://github.com/clauxel/agent-data-boundary-mcp",
+    "source": "github"
+  },
   "remotes": [
     {
       "type": "streamable-http",
@@ -13,14 +15,22 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer token from the product website."
+          "description": "Bearer token from the product website.",
+          "is_required": true,
+          "is_secret": true
         }
       ]
     }
   ],
-  "tags": [
-    "data-governance",
-    "permissions",
-    "remote-mcp"
-  ]
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "title": "AgentData Boundary MCP",
+      "tags": [
+        "data-governance",
+        "permissions",
+        "remote-mcp"
+      ],
+      "server_card_url": "https://agentdataboundary.clauxel.com/server-card.json"
+    }
+  }
 }
